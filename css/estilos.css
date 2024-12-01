@@ -89,15 +89,20 @@ h1 {
 
 .card {
   margin: 10px;
-  height: 580px;
+  height: 450px;
   width: 250;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+.card-img-top {
+  max-height: 270px;
+  object-fit: cover;
+}
+
 .card-title {
-  color: #0082f4;
+  color: #4e799c;
 }
 
 .link-propaganda {
@@ -118,11 +123,11 @@ h1 {
   border: 1px solid rgb(215, 214, 214);
 }
 h2 {
-  color: #0082f4;
+  color: #4e799c;
 }
 /* Botones de las cards */
 .btn-custom {
-  background-color: #0082f4;
+  background-color: #4e799c;
   color: white;
   border: none;
   margin-bottom: auto;
