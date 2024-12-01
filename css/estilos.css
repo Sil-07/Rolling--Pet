@@ -16,3 +16,65 @@
 }
 
 /* FOOTER FIN */
+
+/* MAIN */
+
+.bg-custom {
+  background-color: whitesmoke;
+}
+
+/* CAROUSEL INICIO */
+.carousel-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+@media (max-width: 320px) {
+  .carousel-item img {
+    height: 74px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .carousel-item img {
+    height: 74px;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .carousel-item img {
+    height: 87px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .carousel-item img {
+    height: 98px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-item img {
+    height: 177px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .carousel-item img {
+    height: 236px;
+  }
+}
+@media (min-width: 1400px) {
+  .carousel-item img {
+    height: 280px;
+  }
+}
+/* CAROUSEL FIN */
+
+/* CATEGORIAS INICIO */
+.config img {
+  height: 150px;
+}
+/* CATEGORIAS FIN */
+
+/* IMG ESTATICA INICIO */
+.img-tamanio {
+  width: 80%;
+}
+/* IMG ESTATICA FIN */
