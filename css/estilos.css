@@ -12,7 +12,7 @@
 }
 
 .nav-link {
-  color:#4e799c;
+  color: #4e799c;
 }
 
 h1 {
@@ -35,17 +35,26 @@ h1 {
 
 @media (max-width: 320px) {
   .carousel-item img {
-    height: 74px;
+    height: 80px;
+  }
+  .carousel-inner {
+    display: none;
   }
 }
 @media (min-width: 320px) and (max-width: 375px) {
   .carousel-item img {
-    height: 74px;
+    height: 75px;
+  }
+  .carousel {
+    display: none;
   }
 }
 @media (min-width: 375px) and (max-width: 425px) {
   .carousel-item img {
     height: 87px;
+  }
+  .carousel {
+    display: none;
   }
 }
 @media (min-width: 425px) and (max-width: 768px) {
@@ -71,14 +80,18 @@ h1 {
 /* CAROUSEL FIN */
 
 /* CATEGORIAS INICIO */
+.color-cate {
+  background-color: #fad873ec;
+}
+
 .config img {
-  height: 150px;
+  height: 120px;
 }
 /* CATEGORIAS FIN */
 
 /* IMG ESTATICA INICIO */
 .img-tamanio {
-  width: 80%;
+  width: 100%;
 }
 /* IMG ESTATICA FIN */
 
