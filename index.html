@@ -1,10 +1,550 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="es_AR">
   <head>
-    <meta name="author" />
     <meta charset="UTF-8" />
+    <meta name="author" content="grupo numero 4" />
+    <meta name="description" content="proyecto inicial sobre petshop" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="keywords"
+      content="petshop, animales, mascotas, tienda online, tienda de mascotas, alimento para mascotas, rollingpet, rolling, pet, pets"
+    />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./img/logo/logo-rollingpet.png"
+      type="image/x-icon"
+    />
+    <title>RollingPet</title>
+    <!-- Link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!-- Inicio Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-md bg-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand logo-principal" href="/index.html">
+            <img src="./img/logo/logo-rollingpet.png" alt="logo Pet" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/404.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/404.html">Contacto</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/404.html">Iniciar Sesion</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/registro.html"
+                  >Registrarse</a
+                >
+              </li>
+            </ul>
+            <!-- FIN MODAL -->
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-custom">
+      <!-- CAROUSEL INICIO -->
+      <section id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <article class="carousel-item active d-flex justify-content-center">
+            <img
+              src="./img/carousel/banner_1.png"
+              class="d-block"
+              alt="publicidad1"
+            />
+          </article>
+          <article class="carousel-item d-flex justify-content-center">
+            <img
+              src="./img/carousel/banner_2.png"
+              class="d-block"
+              alt="publicidad2"
+            />
+          </article>
+          <article class="carousel-item d-flex justify-content-center">
+            <img
+              src="./img/carousel/banner_3.png"
+              class="d-block"
+              alt="publicidad3"
+            />
+          </article>
+          <article class="carousel-item d-flex justify-content-center">
+            <img
+              src="./img/carousel/banner_4.png"
+              class="d-block"
+              alt="publicidad4"
+            />
+          </article>
+          <article class="carousel-item d-flex justify-content-center">
+            <img
+              src="./img/carousel/banner_5.png"
+              class="d-block"
+              alt="publicidad5"
+            />
+          </article>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleFade"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <!-- CAROUSEL FIN -->
+
+      <!-- CATEGORIA INICIO -->
+      <section>
+        <div class="container">
+          <div class="row config mb-4">
+            <div class="col-lg-3 col-md-6 text-center mt-4">
+              <a href="./paginas/404.html">
+                <img src="./img/categorias/perro.png" alt="img perro" />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center mt-4">
+              <a href="./paginas/404.html">
+                <img src="./img/categorias/gato.png" alt="img gato" />
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center mt-4">
+              <a href="./paginas/404.html"
+                ><img src="./img/categorias/loro.png" alt="img loro"
+              /></a>
+            </div>
+            <div class="col-lg-3 col-md-6 text-center mt-4">
+              <a href="./paginas/404.html"
+                ><img src="./img/categorias/pez-payaso.png" alt="img pez"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CATEGORIA FIN -->
+
+      <!-- IMG ESTATICA INICIO-->
+      <section
+        class="container d-flex justify-content-center align-items-center"
+      >
+        <img
+          class="img-fluid img-tamanio"
+          src="./img/productos/banner_estatica.png"
+          alt=""
+        />
+      </section>
+      <!-- IMG ESTATICA FIN-->
+      <!-- CARDS INICIO -->
+      <div class="container-fluid">
+        <div class="row">
+          <section class="col-lg-9">
+            <article class="row justify-content-center align-items-center">
+              <h2 class="text-center mt-5">Nuestros Productos</h2>
+              <!-- Producto 1 -->
+              <div class="card tamanio-tarjeta col-sm-12 col-md-6 col-lg-3">
+                <img
+                  src="./img/productos/old prince 1000x1000.webp"
+                  class="card-img-top"
+                  alt="imagen de alimento de cordero y arroz para perros grandes"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">OLD PRINCE 18KG</h5>
+                  <p class="card-text text-truncate h-5">
+                    Alimento Old Prince Nobel. Cordero y Arroz. Para perros
+                    adultos, medianos y grandes. Promueve el crecimiento
+                    saludable, fortificado con vitaminas y minerales esenciales
+                  </p>
+                  <a href="./paginas/404.html" class="btn btn-custom"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+              <!-- Producto 2 -->
+
+              <div class="card tamanio-tarjeta col-sm-12 col-md-6 col-lg-3">
+                <img
+                  src="./img/productos/PRO PLAN GATOS.png"
+                  class="card-img-top"
+                  alt="imagen de alimento para gatos"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">PRO PLAN GATOS +7</h5>
+                  <p class="card-text text-truncate h-5">
+                    Pro Plan es una marca de alimentos premium para gatos,
+                    desarrollada por Purina. Se enfoca en proporcionar una
+                    nutrición avanzada y de alta calidad.
+                  </p>
+                  <a href="./paginas/404.html" class="btn btn-custom"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+              <!-- Producto 3 -->
+
+              <div class="card tamanio-tarjeta col-sm-12 col-md-6 col-lg-3">
+                <img
+                  src="./img/productos/alimento para peces 1100x1100.webp"
+                  class="card-img-top"
+                  alt="imagen de alimento para peces"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SPIRULINA BOOTS 70GR</h5>
+                  <p class="card-text text-truncate">
+                    Spirulina Boost es un alimento premium para peces
+                    herbívoros, formulado con un alto contenido de alga
+                    espirulina.
+                  </p>
+                  <a href="./paginas/404.html" class="btn btn-custom"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+              <!-- Producto 4 -->
+
+              <div class="card tamanio-tarjeta col-sm-12 col-md-6 col-lg-3">
+                <img
+                  src="./img/productos/lata puppy 1000x1000.png"
+                  class="card-img-top"
+                  alt="imagen alimento en lata humedo para perros"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SIEGER WET PUPPY</h5>
+                  <p class="card-text text-truncate">
+                    Es un alimento balanceado húmedo para cachorros, con carne
+                    de salmón y pollo. Está formulado para fortalecer las
+                    defensas naturales y promover el desarrollo del cerebro.
+                  </p>
+                  <a href="./paginas/404.html" class="btn btn-custom"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+              <!-- Producto 5 -->
+
+              <div class="card tamanio-tarjeta col-sm-12 col-md-6 col-lg-3">
+                <img
+                  src="./img/productos/PEQUEÑA-X-KG.png"
+                  class="card-img-top"
+                  alt="imagen de alimentos para perros grandes con mordida pequeña"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">NATURAL CHOICE 7.5KG</h5>
+                  <p class="card-text text-truncate">
+                    Sus fórmulas están diseñadas para promover la salud y el
+                    bienestar a través de ingredientes naturales y de alta
+                    calidad.
+                  </p>
+                  <a href="./paginas/404.html" class="btn btn-custom"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+              <!-- Producto 6 -->
+
+              <div class="card tamanio-tarjeta col-sm-12 col-md-6 col-lg-3">
+                <img
+                  src="./img/productos/Alimento-para-pajaros-Pretty-Pets-500-g.jpg"
+                  class="card-img-top"
+                  alt="alimento alpiste para aves"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CHAMPION MINI PETS</h5>
+                  <p class="card-text text-truncate">
+                    Champion Mini Pet Alpiste es un suplemento de semillas para
+                    aves pequeñas, como canarios y catitas. Está compuesto por
+                    mijo, alpiste, avena, proporcionando nutrientes esenciales.
+                  </p>
+                  <a href="./paginas/404.html" class="btn btn-custom"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+              <!-- Producto 7 -->
+
+              <div class="card tamanio-tarjeta col-sm-12 col-md-6 col-lg-3">
+                <img
+                  src="./img/productos/M_royal-canin-kitten-lata-165g9287.png"
+                  class="card-img-top"
+                  alt="alimento que favorece el desarrollo para gatos"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">ROYAL KANIN KITTEN</h5>
+                  <p class="card-text text-truncate">
+                    Está formulado para apoyar el desarrollo saludable, con
+                    nutrientes esenciales que favorecen el sistema inmunológico
+                    y digestivo. Completo y equilibrado para gatos en
+                    crecimiento
+                  </p>
+                  <a href="./paginas/404.html" class="btn btn-custom"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+              <!-- Producto 8 -->
+
+              <div class="card tamanio-tarjeta col-sm-12 col-md-6 col-lg-3">
+                <img
+                  src="./img/productos/baño pet 800x800.png"
+                  class="card-img-top"
+                  alt="imagen de paños descartables para que los animales hagan sus necesidades"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">PAÑOS PET x10U</h5>
+                  <p class="card-text text-truncate">
+                    Paños Pet 60x90cm son toallas sanitarias absorbentes
+                    diseñadas para mascotas. Son ideales para entrenar a las
+                    mascotas en el uso del baño, altamente absorbentes.
+                  </p>
+                  <a href="./paginas/404.html" class="btn btn-custom"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+              <!-- Producto 9 -->
+
+              <div class="card tamanio-tarjeta col-sm-12 col-md-6 col-lg-3">
+                <img
+                  src="./img/productos/ALIMENTO PARA GATOS.jpg"
+                  class="card-img-top"
+                  alt="imagen de alimento de dieta prescripta para gatos"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">MV DIETA PRESCRIPTA</h5>
+                  <p class="card-text text-truncate">
+                    Es una fórmula especial para gatos con problemas digestivos.
+                    Contiene ingredientes de alta digestibilidad y bajo residuo,
+                    ayudando a mejorar y mantener la salud gastrointestinal.
+                  </p>
+                  <a href="./paginas/404.html" class="btn btn-custom"
+                    >Ver más</a
+                  >
+                </div>
+              </div>
+            </article>
+          </section>
+          <!-- Comienza el Aside -->
+
+          <aside class="col-lg-3 d-none d-lg-block">
+            <section>
+              <!-- Propaganda 1 -->
+              <a class="link-propaganda" href="/paginas/404.html">
+                <div class="card-1 mt-5 fw-bold">
+                  <img
+                    src="./img/productos/organizacion colegial veterinaria.gif"
+                    class="card-img-top"
+                    alt="imagen logo de organizacion colegial de veterinarios"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Cuidamos con Conciencia, Sanamos con Corazón
+                    </h5>
+                    <p class="card-text">
+                      Trabajamos con la comunidad para educar y concienciar
+                      sobre el cuidado de los animales y la importancia de la
+                      salud veterinaria en la sociedad.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary"
+                        >Unete a nosotros</small
+                      >
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <!-- Propaganda 2 -->
+              <a class="link-propaganda" href="/paginas/404.html">
+                <div class="card-2">
+                  <img
+                    src="./img/productos/transportadora de tela 1000x1000.webp"
+                    class="card-img-top"
+                    alt="imagen de transportadora de animales"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">FANCY PET</h5>
+                    <p class="card-text">
+                      Transportadora para perros, gatos y otras mascotas.
+                      Fabricado con materiales textiles de alta resistencia.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">Promocionado</small>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </section>
+          </aside>
+        </div>
+      </div>
+      <!-- CARDS FIN -->
+    </main>
+    <!-- FOOTER INICIO -->
+    <footer
+      class="container-fluid footer-principal justify-content-between pt-4 pb-4"
+    >
+      <section class="row">
+        <div
+          class="d-flex justify-content-center align-items-center col-sm-12 col-md-6 col-lg-3"
+        >
+          <a class="navbar-brand text-center" href="#">
+            <img
+              class=""
+              src="./img/logo/logo-rollingpet.png"
+              alt="imagen logo"
+            />
+          </a>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <h3 class="text-center">Redes sociales</h3>
+
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/paginas/404.html"
+                ><svg
+                  xmlns="http://facebook Petshop rolling"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                  />
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./paginas/404.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                  />
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/paginas/404.html"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  fill="blueColor"
+                  class="bi bi-whatsapp"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                  />
+                </svg>
+                <span>Whatsapp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex justify-content-center col-sm-12 col-md-6 col-lg-3">
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" href="./paginas/404.html">
+                Términos y condiciones
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./paginas/404.html">
+                Trabaja con nosotros
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./paginas/404.html"> Legales </a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center col-sm-12 col-md-6 col-lg-3"
+        >
+          <iframe
+            class=""
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.106067949506!2d-65.20974192547719!3d-26.836578490025275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses-419!2sar!4v1731881361358!5m2!1ses-419!2sar"
+            width="250"
+            height="200"
+            style="border: 1px solid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </footer>
+    <!-- FOOTER FIN  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

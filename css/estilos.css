@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* HEADER INICIO */
+.bg-navbar {
+  background-color: #f9bd0e;
+  font-family: "Sour Gummy";
+  font-size: 20px;
+}
+
+.logo-principal img {
+  width: 70px;
+}
+
+.nav-link {
+  color: #0082f4;
+}
+
+h1 {
+  color: #0082f4;
+}
+/* HEADER FIN */
+
+/* MAIN */
+
+.bg-custom {
+  background-color: whitesmoke;
+}
+
+/* CAROUSEL INICIO */
+.carousel-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+@media (max-width: 320px) {
+  .carousel-item img {
+    height: 74px;
+  }
+}
+@media (min-width: 320px) and (max-width: 375px) {
+  .carousel-item img {
+    height: 74px;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .carousel-item img {
+    height: 87px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .carousel-item img {
+    height: 98px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-item img {
+    height: 177px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .carousel-item img {
+    height: 236px;
+  }
+}
+@media (min-width: 1400px) {
+  .carousel-item img {
+    height: 280px;
+  }
+}
+/* CAROUSEL FIN */
+
+/* CATEGORIAS INICIO */
+.config img {
+  height: 150px;
+}
+/* CATEGORIAS FIN */
+
+/* IMG ESTATICA INICIO */
+.img-tamanio {
+  width: 80%;
+}
+/* IMG ESTATICA FIN */
+
+/* CARDS INICIO */
+.tamanio-tarjeta {
+  width: 19rem;
+}
+
+.card {
+  margin: 10px;
+  height: 450px;
+  width: 250;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-img-top {
+  max-height: 270px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: #4e799c;
+}
+
+.link-propaganda {
+  text-decoration: none;
+  color: rgb(138, 136, 136);
+}
+
+.card-1 {
+  margin: 10px;
+  padding: 8px;
+  height: 480px;
+  border: 1px solid rgb(215, 214, 214);
+}
+.card-2 {
+  margin: 10px;
+  padding: 8px;
+  height: 430px;
+  border: 1px solid rgb(215, 214, 214);
+}
+h2 {
+  color: #4e799c;
+}
+/* Botones de las cards */
+.btn-custom {
+  background-color: #4e799c;
+  color: white;
+  border: none;
+  margin-bottom: auto;
+}
+
+.btn-custom:hover {
+  background-color: #f9bd0e;
+}
+
+@media (max-width: 1500px) {
+  .articles {
+    flex: 0 0 auto;
+    width: 33.33%;
+  }
+}
+
+/* @media (max-width: 1500px) {
+  .card-1 {
+    margin-bottom: 20px;
+  }
+}  */
+
+/* CARDS FIN */
+
+/* FOOTER INICIO */
+
+.footer-principal {
+  background-color: #f9bd0e;
+  font-family: Sour Gummy;
+  font-size: 20px;
+}
+
+.footer-principal a {
+  color: #0082f4;
+}
+
+.footer-principal img {
+  width: 60%;
+}
+
+/* FOOTER FIN */

@@ -1,0 +1,19 @@
+.img-error {
+  max-height: 100%; /* Mantiene las proporciones */
+  width: 100%; /* Escala responsivamente */
+  object-fit: cover; /* Evita deformaciones */
+}
+
+.btn-custom {
+  background-color: #0082f4;
+  color: white;
+  border: none;
+  margin-bottom: auto;
+  padding: 1% 5%;
+  font-size: 20px;
+  top: 99%;
+  left: 50%;
+}
+.btn-custom:hover {
+  background-color: #f9bd0e;
+}
